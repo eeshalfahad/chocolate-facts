@@ -13,7 +13,8 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f3f2; /* A light, creamy background color */
+            /* Changed background color to sky blue */
+            background-color: #87ceeb; 
         }
         .hidden {
             display: none;
@@ -22,54 +23,65 @@
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
 
+    <!-- Kawaii chocolate images in the corners, now using embedded SVG -->
+    <!-- Top-left image -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAiIGhlaWdodD0iNTYiIHg9IjEwIiB5PSIxMiIgcng9IjgiIGZpbGw9IiM2MTM4MTIiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjE2IiB5PSIyMCIgZmlsbD0iIzQwMjQwZiIvPjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iNDgiIHk9IjIwIiBmaWxsPSIjNDAyNDBmIi8+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB4PSIxNiIgeT0iNDIiIGZpbGw9IiM0MDI0MGYiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjQ4IiB5PSI0MiIgZmlsbD0iIzQwMjQwZiIvPjwvc3ZnPg==" alt="Kawaii chocolate icon" class="fixed top-4 left-4 rounded-xl shadow-md transform -rotate-12">
+    <!-- Top-right image -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAiIGhlaWdodD0iNTYiIHg9IjEwIiB5PSIxMiIgcng9IjgiIGZpbGw9IiM2MTM4MTIiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjE2IiB5PSIyMCIgZmlsbD0iIzQwMjQwZiIvPjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iNDgiIHk9IjIwIiBmaWxsPSIjNDAyNDBmIi8+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB4PSIxNiIgeT0iNDIiIGZpbGw9IiM0MDI0MGYiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjQ4IiB5PSI0MiIgZmlsbD0iIzQwMjQwZiIvPjwvc3ZnPg==" alt="Kawaii chocolate icon" class="fixed top-4 right-4 rounded-xl shadow-md transform rotate-12">
+    <!-- Bottom-left image -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAiIGhlaWdodD0iNTYiIHg9IjEwIiB5PSIxMiIgcng9IjgiIGZpbGw9IiM2MTM4MTIiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjE2IiB5PSIyMCIgZmlsbD0iIzQwMjQwZiIvPjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iNDgiIHk9IjIwIiBmaWxsPSIjNDAyNDBmIi8+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB4PSIxNiIgeT0iNDIiIGZpbGw9IiM0MDI0MGYiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjQ4IiB5PSI0MiIgZmlsbD0iIzQwMjQ0ZiIvPjwvc3ZnPg==" alt="Kawaii chocolate icon" class="fixed bottom-4 left-4 rounded-xl shadow-md transform rotate-6">
+    <!-- Bottom-right image -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAiIGhlaWdodD0iNTYiIHg9IjEwIiB5PSIxMiIgcng9IjgiIGZpbGw9IiM2MTM4MTIiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjE2IiB5PSIyMCIgZmlsbD0iIzQwMjQwZiIvPjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iNDgiIHk9IjIwIiBmaWxsPSIjNDAyNDBmIi8+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB4PSIxNiIgeT0iNDIiIGZpbGw9IiM0MDI0MGYiLz48cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHg9IjQ4IiB5PSI0MiIgZmlsbD0iIzQwMjQ0ZiIvPjwvc3ZnPg==" alt="Kawaii chocolate icon" class="fixed bottom-4 right-4 rounded-xl shadow-md transform -rotate-6">
+
     <!-- Landing page with a message and button -->
     <div id="landingPage" class="flex flex-col items-center justify-center text-center">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-stone-800 mb-8">
+        <!-- Changed text color to lilac (using a custom Tailwind class for hex code) -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8" style="color: #c8a2c8;">
             Hi Eeeshal!
         </h1>
-        <button id="startButton" class="bg-stone-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 duration-300 transform-gpu">
+        <button id="startButton" class="text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 duration-300 transform-gpu" style="background-color: #f6b3d4;">
             Press me
         </button>
     </div>
 
     <!-- Main container for the chocolate facts matrix - initially hidden -->
     <div id="chocolateFactsContainer" class="container mx-auto px-4 py-8 max-w-4xl hidden">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 text-stone-800">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10" style="color: #613812;">
             Sweet Chocolate Facts
         </h1>
 
         <!-- Grid layout for the matrix effect (2x2 grid on medium and larger screens) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
-            <!-- Fact 1: Theobroma Cacao -->
-            <div class="bg-white p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
-                <h2 class="text-xl font-semibold mb-3 text-stone-700">The "Food of the Gods"</h2>
-                <p class="text-base text-stone-600">
-                    The scientific name for the chocolate tree is <span class="font-semibold text-stone-800">Theobroma cacao</span>, which is Greek for "food of the gods."
+            <!-- Fact 1: World's Largest Chocolate Bar - Lilac background, white text -->
+            <div class="p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu" style="background-color: #c8a2c8;">
+                <h2 class="text-xl font-semibold mb-3 text-white">World's Largest Bar</h2>
+                <p class="text-base text-white">
+                    The world's largest chocolate bar was created in the UK and weighed over <span class="font-semibold text-white">5.7 tonnes</span>, or roughly the same as an adult African elephant.
                 </p>
             </div>
 
-            <!-- Fact 2: Cacao as Currency -->
-            <div class="bg-white p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
-                <h2 class="text-xl font-semibold mb-3 text-stone-700">Ancient Currency</h2>
-                <p class="text-base text-stone-600">
-                    Before it was a delicious treat, cacao beans were so valuable that ancient Mesoamerican civilizations, including the Aztecs, used them as a form of <span class="font-semibold text-stone-800">currency</span>.
+            <!-- Fact 2: Cacao as Currency - Lighter pink background, white text -->
+            <div class="p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu" style="background-color: #f6b3d4;">
+                <h2 class="text-xl font-semibold mb-3 text-white">Ancient Currency</h2>
+                <p class="text-base text-white">
+                    Before it was a delicious treat, cacao beans were so valuable that ancient Mesoamerican civilizations, including the Aztecs, used them as a form of <span class="font-semibold text-white">currency</span>.
                 </p>
             </div>
 
-            <!-- Fact 3: Theobromine and Dogs -->
-            <div class="bg-white p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
-                <h2 class="text-xl font-semibold mb-3 text-stone-700">Toxicity to Dogs</h2>
-                <p class="text-base text-stone-600">
-                    Chocolate contains a compound called <span class="font-semibold text-stone-800">theobromine</span>, which is harmless to humans but can be toxic to dogs, even in small amounts.
+            <!-- Fact 3: Theobromine and Dogs - Lighter pink background, white text -->
+            <div class="p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu" style="background-color: #f6b3d4;">
+                <h2 class="text-xl font-semibold mb-3 text-white">Toxicity to Dogs</h2>
+                <p class="text-base text-white">
+                    Chocolate contains a compound called <span class="font-semibold text-white">theobromine</span>, which is harmless to humans but can be toxic to dogs, even in small amounts.
                 </p>
             </div>
 
-            <!-- Fact 4: Beans per Pound -->
-            <div class="bg-white p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
-                <h2 class="text-xl font-semibold mb-3 text-stone-700">A Lot of Beans</h2>
-                <p class="text-base text-stone-600">
-                    It takes the harvest from a full year's growth of one cacao tree, approximately <span class="font-semibold text-stone-800">400 cacao beans</span>, to produce just one pound of chocolate.
+            <!-- Fact 4: Beans per Pound - Lilac background, white text -->
+            <div class="p-6 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu" style="background-color: #c8a2c8;">
+                <h2 class="text-xl font-semibold mb-3 text-white">A Lot of Beans</h2>
+                <p class="text-base text-white">
+                    It takes the harvest from a full year's growth of one cacao tree, approximately <span class="font-semibold text-white">400 cacao beans</span>, to produce just one pound of chocolate.
                 </p>
             </div>
 
